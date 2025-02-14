@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form Design</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="./jj.js"></script>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav">
+            <a href="#" class="nav_logo">JG BRO'S</a>
+            <ul class="nav_items">
+                <li class="nav_item">
+                    <a href="#" class="nav_link">HOME</a>
+                    <a href="#" class="nav_link">PRODUCT</a>
+                    <a href="#" class="nav_link">SERVICE</a>
+                    <a href="#" class="nav_link">CONTACT</a>
+                </li>
+            </ul>
+            <button style="background-color: rgb(238, 240, 243);" class="button" onclick="toggleLoginForm()">LOGIN</button>
+        </nav>
+    </header>
+    <div class="box" id="loginBox" style="display:none;">
+        <h1>Login Here</h1>
+        <form name="myform" onsubmit="return vfun()">
+            <p>Username</p>
+            <input type="text" name="uname" placeholder="Enter Username">
+            <p>Password</p>
+            <input type="password" name="upswd" placeholder="Enter Password">
+            <div id="errorBox"></div>
+            <input type="submit" value="Login">
+            <br><br>
+            <a href="register.html">Register for a new account?</a>
+        </form>
+    </div>
+</body>
+</html>
